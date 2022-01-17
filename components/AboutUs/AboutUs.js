@@ -5,8 +5,9 @@ import Card from './Card'
 import Brands from './Brands'
 
 //icon
-import UndefinedIcon from '../icons/undefined'
-import Decoration from '../Header/Decoration'
+import Devices from '../icons/AboutUs/devices';
+import Diagonals from '../icons/AboutUs/diagonals';
+import Terminal from '../icons/AboutUs/terminal';
 
 //Style
 import AboutStyle from './AboutUs.module.scss'
@@ -19,12 +20,9 @@ const AboutUs = () => {
     return(
         <div className={AboutStyle.about_container}>
             <div className={AboutStyle.cards_container}>
-                <Card icon={<UndefinedIcon />} title={"Unify your payments stack"} content={content1}/>
-                <Card icon={<UndefinedIcon />} title={"Own your in-store experience"} content={content2}/>
-                <Card icon={<UndefinedIcon />} title={"Grow your platform's revenue"} content={content3}/>
-            </div>
-            <div>
-                <Brands />
+                <Card icon={<Diagonals />} title={"Unify your payments stack"} content={content1}/>
+                <Card icon={<Devices />} title={"Own your in-store experience"} content={content2}/>
+                <Card icon={<Terminal />} title={"Grow your platform's revenue"} content={content3}/>
             </div>
         </div>
     );

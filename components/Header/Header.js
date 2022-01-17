@@ -5,7 +5,6 @@ import Image from 'next/image'
 import TerminalLogo from '../icons/Header/TerminalLogo'
 import Baner from '../../images/Baner'
 import Phone from '../../images/stripe_phone.png'
-import Decoration from './Decoration'
 
 //Style
 import HeaderStyle from './Header.module.scss'
@@ -50,29 +49,6 @@ const Header = () => {
                         <Image src={Phone} alt="phone" height={400} width={200}/>
                     </div>
                 </div>
-            </div>
-
-            <div className={HeaderStyle.decoration_container}>
-                <div className={HeaderStyle.left_container}>
-                    <div className={HeaderStyle.decoration_line}>
-                        <Decoration width={'30%'} color={'#35345E'} padding={'90px'} />
-                        <Decoration width={'40%'} color={'#DFE2E2'} padding={'90px'} />
-                    </div> 
-                    <div className={HeaderStyle.decoration_line}>
-                        <Decoration width={'15%'} color={'#FED56B'} padding={'90px'} />
-                    </div>
-                </div>
-
-                <div className={HeaderStyle.right_container}>
-                    <div className={HeaderStyle.decoration_line_reverse}>
-                        <Decoration width={'15%'} color={'#35345E'} padding={'90px'} />
-                        <Decoration width={'20%'} color={'#DFE2E2'} padding={'90px'} />
-                    </div> 
-                    <div className={HeaderStyle.decoration_line_reverse}>
-                        <Decoration width={'7.5%'} color={'#FED56B'} padding={'90px'} />
-                    </div>
-                </div>
-               
             </div>
           
         </div>
